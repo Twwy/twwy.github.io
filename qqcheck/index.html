@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>QQ漫游聊天记录在线查看 | 囧思志</title>
+  <meta name="author" content="Twwy">
+  
+  <meta name="description" content=".qq-input{margin-bottom: 10px;}.qq-info{background: #EEE;border: #AAA solid 1px;display: inline-block;padding: 10px;}
+
+
+
+
+
+    $(document).ready(funct">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="QQ漫游聊天记录在线查看"/>
+  <meta property="og:site_name" content="囧思志"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="囧思志" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39940658-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">囧思志</a></h1>
+  <h2><a href="/">不要让我停止想象</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    	
+	<li><a href="/">首页</a></li>
+	<li><a href="http://blog.csdn.net/jelope" target="_blank">技术博客</a></li>
+	<li><a href="./atom.xml" target="_blank">RSS</a></li>
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="page">
+  
+  <div class="post-content  post-whole ">
+    <header>
+      
+      
+      
+  
+    <h1 class="title">QQ漫游聊天记录在线查看</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <style>.qq-input{margin-bottom: 10px;}.qq-info{background: #EEE;border: #AAA solid 1px;display: inline-block;padding: 10px;}</style>
+
+<script src=" http://libs.baidu.com/json/json2/json2.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $("#qq").change(function(){
+            qq = $(this).val();
+            $.ajax({
+                type:'get',
+                url:'http://r.qzone.qq.com/cgi-bin/user/cgi_personal_card',
+                dataType:'jsonp',
+                jsonpCallback:"_Callback",
+                data:{"uin": qq},
+                async: false,
+                success:function(data){
+                    var html;
+                    if(typeof(data.nickname) == "undefined") html = '暂无信息';
+                    else html = data.nickname;
+                    // if(typeof(data.avatarUrl) != "undefined" ) html += "<br>"+"<img src=\""+data.avatarUrl+"\"/>";
+                    $(".qq-info").html(html);
+                }
+            });
+
+            href = "http://verify.qq.com/login_pwd.html?u=http%3A%2F%2Fverify.qq.com%2Fhello_pwd.html%3Ffuin%3D"+qq+"%26isvip%3D1%26t%3D2%26version%3D1%26verifydl%3D0%26pgsrc%3D";
+            $("#qqHref").attr('href', href);
+
+            href = "http://verify.qq.com/hello_pwd.html?fuin="+qq+"&isvip=1&t=2&version=1&verifydl=0&pgsrc=";
+            $("#qqHas").attr('href', href);
+
+        });
+
+    });
+</script>
+
+<p>不登陆QQ直接查看漫游聊天记录<br/></p>
+<blockquote>
+<p>QQ帐号已登录状态:<br><a href="http://verify.qq.com/hello_pwd.html?fuin=需要查看的QQ号&amp;isvip=1&amp;t=2&amp;version=1&amp;verifydl=0&amp;pgsrc=" target="_blank">http://verify.qq.com/hello_pwd.html?fuin=需要查看的QQ号&amp;isvip=1&amp;t=2&amp;version=1&amp;verifydl=0&amp;pgsrc=</a><br/></p>
+<p>QQ帐号未登录状态:<br><a href="http://verify.qq.com/login_pwd.html?u=http%3A%2F%2Fverify.qq.com%2Fhello_pwd.html%3Ffuin%3D需要查看的QQ号%26isvip%3D1%26t%3D2%26version%3D1%26verifydl%3D0%26pgsrc%3D" target="_blank">http://verify.qq.com/login_pwd.html?u=http%3A%2F%2Fverify.qq.com%2Fhello_pwd.html%3Ffuin%3D需要查看的QQ号%26isvip%3D1%26t%3D2%26version%3D1%26verifydl%3D0%26pgsrc%3D</a><br/></p>
+</blockquote>
+<p>访问上述那段地址即可不用登陆QQ直接查看聊天记录<br/></p>
+<p>注意:该聊天记录为QQ漫游聊天记录。<br/>如果出现403错误，说明你浏览器不支持noreferer，请复制那个网址到新的页面回车打开即可。<br/></p>
+<p><div class="qq-input">QQ:<input type="text" id="qq" />&nbsp;<!--<a rel="noreferrer" href="#" target="_blank" id="qqHref">未登录QQ点击查看</a>&nbsp;--><a target="_blank" id="qqHas" rel="noreferrer" href="#">点击查看</a></div><br><span class="qq-info">暂无信息</span></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<!-- shuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"twwy"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
+
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:twwy.net">
+  </form>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/想象/">想象</a><small>1</small></li>
+  
+    <li><a href="/tags/数学/">数学</a><small>1</small></li>
+  
+    <li><a href="/tags/文明/">文明</a><small>1</small></li>
+  
+    <li><a href="/tags/科技/">科技</a><small>1</small></li>
+  
+    <li><a href="/tags/艺术/">艺术</a><small>1</small></li>
+  
+    <li><a href="/tags/计算机/">计算机</a><small>2</small></li>
+  
+    <li><a href="/tags/随笔/">随笔</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  <div class="widget tag">
+	<h3 class="title">关于我</h3>
+	<ul class="entry">
+		<li>
+			<a target="_blank" href="http://weibo.com/jelope/" title="囧思八千">微博</a>
+		</li>
+	</ul>
+</div>
+
+
+  <div class="widget tag">
+	<h3 class="title">小工具</h3>
+	<ul class="entry">
+		<li>
+			<a  href="/qqcheck/" title="QQ漫游聊天记录查看">QQ漫游聊天记录查看</a>
+		</li>
+	</ul>
+</div>
+
+
+  <div class="widget tag">
+	<h3 class="title">友情链接</h3>
+	<ul class="entry">
+		<li>
+			<a target="_blank" href="http://www.firefoxbug.net/" title="firefoxbug">firefoxbug</a>
+		</li>
+		<li>
+			<a target="_blank" href="http://yorkiefixer.me/" title="Yorkie">Yorkie</a>
+		</li>
+		<li>
+			<a target="_blank" href="http://hshao.diandian.com/" title="H.Shao">H.Shao</a>
+		</li>
+		<li>
+			<a target="_blank" href="http://cryinstall.com/" title="Thinking in Code">Thinking in Code</a>
+		</li>	
+		<li>
+			<a target="_blank" href="http://www.lfyzjck.com/" title="南柯一梦">南柯一梦</a>
+		</li>
+		<li>
+			<a target="_blank" href="http://www.hlqf.net/" title="海浪清风">海浪清风</a>
+		</li>
+		<li>
+			<a target="_blank" href="http://1992s.com/" title="ReSur">ReSur</a>
+		</li>
+	</ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 Twwy
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
