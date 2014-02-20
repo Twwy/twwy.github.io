@@ -4,12 +4,21 @@
   <subtitle><![CDATA[不要让我停止想象]]></subtitle>
   <link href="http://twwy.net/atom.xml" rel="self"/>
   <link href="http://twwy.net"/>
-  <updated>2014-02-20T01:29:47.536Z</updated>
+  <updated>2014-02-20T15:03:18.564Z</updated>
   <id>http://twwy.net/</id>
   <author>
     <name><![CDATA[Twwy]]></name>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
+  <entry>
+    <title type="html"><![CDATA[像流星落下]]></title>
+    <link href="http://twwy.net/2014/02/20/star/"/>
+    <id>http://twwy.net/2014/02/20/star/</id>
+    <published>2014-02-20T15:55:03.000Z</published>
+    <updated>2014-02-20T15:03:06.000Z</updated>
+    <content type="html"><![CDATA[<p>生命中没有静止的星，<br>星空中没有静止的时间。<br>当天空中有一颗划过，<br>许愿还是闭眼？<br>有的星星从泥浆中挣脱，<br>滑落燃烧，<br>只为那刻的闪耀。<br>每颗会亮的星，每个会笑的人。<br>落下不一定消失，<br>闪耀不一定照亮，<br>生命总有那一瞬，<br>像流星落下。</p>
+]]></content>
+  </entry>
   <entry>
     <title type="html"><![CDATA[世上本无物]]></title>
     <link href="http://twwy.net/2014/02/14/nothing/"/>
