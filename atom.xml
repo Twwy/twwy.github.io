@@ -4,12 +4,21 @@
   <subtitle><![CDATA[不要让我停止想象]]></subtitle>
   <link href="http://twwy.net/atom.xml" rel="self"/>
   <link href="http://twwy.net"/>
-  <updated>2014-02-22T02:41:50.340Z</updated>
+  <updated>2014-02-22T02:46:39.444Z</updated>
   <id>http://twwy.net/</id>
   <author>
     <name><![CDATA[Twwy]]></name>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
+  <entry>
+    <title type="html"><![CDATA[测试]]></title>
+    <link href="http://twwy.net/2014/02/22/test/"/>
+    <id>http://twwy.net/2014/02/22/test/</id>
+    <published>2014-02-21T22:55:03.000Z</published>
+    <updated>2014-02-22T02:46:29.000Z</updated>
+    <content type="html"><![CDATA[<p>sds</p>
+]]></content>
+  </entry>
   <entry>
     <title type="html"><![CDATA[像流星落下]]></title>
     <link href="http://twwy.net/2014/02/20/star/"/>
